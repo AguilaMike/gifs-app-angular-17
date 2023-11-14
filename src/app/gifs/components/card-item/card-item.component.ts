@@ -1,10 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Gif } from '../../interfaces/gifs.interfaces';
+import { LazyImageComponent } from '../../../shared/shared.config';
 
 @Component({
   selector: 'gifs-card-item',
   standalone: true,
-  imports: [],
+  imports: [LazyImageComponent],
   templateUrl: './card-item.component.html',
   styleUrl: './card-item.component.scss'
 })
