@@ -11,7 +11,6 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class SearchBoxComponent {
   @ViewChild('txtTagInput') tagInput!: ElementRef<HTMLInputElement>;
 
-  //searchTag(newTag: string) {
   searchTag() {
     const newTag = this.tagInput.nativeElement.value;
     console.log(newTag);
